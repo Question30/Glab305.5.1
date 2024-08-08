@@ -22,6 +22,7 @@
         <!--   Mapping entity file -->
         <mapping class="model.Teacher"/>
         <mapping class="model.Department"/>
+        <mapping class="model.Address" />
     </session-factory>
  </hibernate-configuration>
 

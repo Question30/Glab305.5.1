@@ -17,7 +17,18 @@ public class Teacher implements Serializable {
     private String salary;
     private String TeacherName;
 
-    public Teacher( String salary, String teacherName) {
+    @OneToOne(cascade = CascadeType.ALL)
+    private Address address;
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public Teacher(String salary, String teacherName) {
         super();
         this.salary = salary;
         TeacherName = teacherName;
