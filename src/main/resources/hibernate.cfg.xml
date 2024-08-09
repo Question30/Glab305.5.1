@@ -23,6 +23,8 @@
         <mapping class="model.Teacher"/>
         <mapping class="model.Department"/>
         <mapping class="model.Address" />
+        <mapping class="model.Cohort" />
+
     </session-factory>
  </hibernate-configuration>
 
